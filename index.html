@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            spacing: {
+              13: "3.25rem",
+            },
+            fontFamily: {
+              inter: ["inter"],
+            },
+            colors: {
+              cofe: "#c0ffee",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Belajar Tailwindcss</title>
+  </head>
+  <body>
+    <h1 class="text-8xl font-bold text-center my-10">
+      Ayo Belajar
+      <span
+        class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent"
+        >Tailwindcss</span
+      >
+    </h1>
+
+    <section
+      class="mb-10 bg-gradient-to-br via-red-100 from-blue-300 to-violet-300"
+    >
+      <h2 class="text-3xl text-center">Spacing</h2>
+      <div class="m-13 bg-cofe">Margin</div>
+      <div class="p-8 bg-gray-200">Padding</div>
+    </section>
+
+    <section class="mb-10 bg-green-300">
+      <h2 class="text-3xl text-center">Sizing</h2>
+      <div class="w-32 h-32 bg-blue-400">Kotak 1</div>
+    </section>
+
+    <section class="mb-96 font-inter max-w-3xl mx-auto">
+      <h2 class="mb-2 text-4xl font-bold">
+        Belajar Mengenai Typography Pada Tailwindcss
+      </h2>
+      <div class="mb-4 text-lg text-gray-500">
+        By <a href class="font-semibold text-gray-600">Triono Saputro</a>, 1
+        Januari 2023
+      </div>
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet
+        <a href class="underline font-semibold text-blue-400">consectetur</a>
+        adipisicing elit. Exercitationem, iste! Dolorem aliquid pariatur sint
+        esse perspiciatis totam corporis amet praesentium commodi numquam ut
+        ipsum veritatis nam repellendus odit, dignissimos molestiae minus
+        quisquam rem saepe vitae alias odio! Aliquam dolor numquam repellendus
+        asperiores dignissimos ab voluptatem ratione! Error repellat repellendus
+        corporis?
+      </p>
+      <blockquote class="mb-4 italic font-thin text-xl">
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo autem
+        possimus voluptatibus quaerat praesentium aut pariatur recusandae nobis
+        repellat atque?"
+      </blockquote>
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vel tempora
+        sequi deleniti deserunt, error odio obcaecati architecto, veniam vero
+        sint tenetur laudantium dolorum fuga, laborum non vitae. Aspernatur,
+        atque!
+      </p>
+    </section>
+  </body>
+</html>
