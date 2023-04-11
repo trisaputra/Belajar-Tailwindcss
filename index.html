@@ -166,5 +166,13 @@
         </form>
     </div>
     <div class="mb-96"></div>
+    <script>
+        const checkbox = document.querySelector('#toggle');
+        const html= document.querySelector('html');
+
+        checkbox.addEventListener('click', function(){
+            checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
+        })
+    </script>
   </body>
 </html>
